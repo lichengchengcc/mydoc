@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NEWMING</title>
-        
+
     <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
 </head>
 <body>
 <div class="navbar navbar-line">
     <div class="container">
         <div class="logo">
-            
+
                 NEWMING
-            
+
         </div>
         <input type="checkbox" id="idoc_nav" />
         <div class="menu_tree">
-        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>基础知识</a><ul><li><a href="../../html/基础知识/Git和Github手册.html">Git和Github手册</a></li><li><a href="../../html/基础知识/基本shell命令使用.html">基本shell命令使用</a></li><li><a href="../../html/基础知识/Nodejs安装配置.html">Nodejs安装配置</a></li><li><a href="../../html/基础知识/NPM的使用方法.html">NPM的使用方法</a></li><li><a href="../../html/基础知识/webpack基础.html">webpack基础</a></li><li><a href="../../html/基础知识/ES6快速入门.html">ES6快速入门</a></li><li><a href="../../html/基础知识/vi编辑器操作.html">vi编辑器操作</a></li></ul></li><li><a href="#"><span></span>React专题</a><ul><li class="active"><a href="../../html/React专题/React基础知识.html">React基础知识</a></li><li><a href="../../html/React专题/React-router路由.html">React-router路由</a></li></ul></li><li><a href="#"><span></span>Nodejs基础</a><ul><li><a href="../../html/Nodejs基础/起一个web服务器.html">起一个web服务器</a></li><li><a href="../../html/Nodejs基础/命令行中体验nodejs.html">命令行中体验nodejs</a></li><li><a href="../../html/Nodejs基础/Nodejs模块.html">Nodejs模块</a></li><li><a href="../../html/Nodejs基础/URL.html">URL</a></li><li><a href="../../html/Nodejs基础/QueryString.html">QueryString</a></li><li><a href="../../html/Nodejs基础/HTTP.html">HTTP</a></li></ul></li><li><a href="#"><span></span>数据库</a><ul><li><a href="../../html/数据库/mongodb.html">mongodb</a></li></ul></li><li><a href="../../html/ABOUTME.html">ABOUTME</a></li></ul>    
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>基础知识</a><ul><li><a href="../../html/基础知识/Git和Github手册.html">Git和Github手册</a></li><li><a href="../../html/基础知识/基本shell命令使用.html">基本shell命令使用</a></li><li><a href="../../html/基础知识/Nodejs安装配置.html">Nodejs安装配置</a></li><li><a href="../../html/基础知识/NPM的使用方法.html">NPM的使用方法</a></li><li><a href="../../html/基础知识/webpack基础.html">webpack基础</a></li><li><a href="../../html/基础知识/ES6快速入门.html">ES6快速入门</a></li><li><a href="../../html/基础知识/vi编辑器操作.html">vi编辑器操作</a></li></ul></li><li><a href="#"><span></span>React专题</a><ul><li class="active"><a href="../../html/React专题/React基础知识.html">React基础知识</a></li><li><a href="../../html/React专题/React-router路由.html">React-router路由</a></li></ul></li><li><a href="#"><span></span>Nodejs基础</a><ul><li><a href="../../html/Nodejs基础/起一个web服务器.html">起一个web服务器</a></li><li><a href="../../html/Nodejs基础/命令行中体验nodejs.html">命令行中体验nodejs</a></li><li><a href="../../html/Nodejs基础/Nodejs模块.html">Nodejs模块</a></li><li><a href="../../html/Nodejs基础/URL.html">URL</a></li><li><a href="../../html/Nodejs基础/QueryString.html">QueryString</a></li><li><a href="../../html/Nodejs基础/HTTP.html">HTTP</a></li></ul></li><li><a href="#"><span></span>数据库</a><ul><li><a href="../../html/数据库/mongodb.html">mongodb</a></li></ul></li><li><a href="../../html/ABOUTME.html">ABOUTME</a></li></ul>
         </div>
-        
-        
-        <div class="forkgithub"><a target="_blank" href="https://newming.github.io">fork on github</a></div>
-        
+
+
+        <!-- <div class="forkgithub"><a target="_blank" href="https://newming.github.io">fork on github</a></div> -->
+
 
         <section class="idoc_nav_btn">
             <label for="idoc_nav"><span></span></label>
         </section>
     </div>
-    
+
 </div>
 
 
@@ -39,7 +39,7 @@
     <div class="page-toc">
         <ul><li><a href="#t0React基础知识详解">React基础知识详解</a><ul><li><a href="#t11. 顶层API">1. 顶层API</a><ul><li><a href="#t2react.js">react.js</a></li><li><a href="#t3react-dom.js">react-dom.js</a></li><li><a href="#t4react-dom-server.js">react-dom-server.js</a></li></ul></li><li><a href="#t52. jsx语法">2. jsx语法</a><ul><li><a href="#t62.1 注释、命名、根元素个数、JSX 嵌入变量">2.1 注释、命名、根元素个数、JSX 嵌入变量</a></li><li><a href="#t72.2 styles">2.2 styles</a></li><li><a href="#t82.3  JSX SPREAD">2.3  JSX SPREAD</a></li><li><a href="#t92.4 属性名不能和 js 关键字冲突">2.4 属性名不能和 js 关键字冲突</a></li></ul></li><li><a href="#t103. 数据流：state props propType">3. 数据流：state props propType</a><ul><li><a href="#t113.1 state && setState">3.1 state && setState</a></li><li><a href="#t123.2 props">3.2 props</a></li><li><a href="#t133.3 propTypes">3.3 propTypes</a></li></ul></li><li><a href="#t144. 调用API定义组件">4. 调用API定义组件</a><ul><li><a href="#t154.1 组件初始定义">4.1 组件初始定义</a></li><li><a href="#t164.2 初次创建组件时调用">4.2 初次创建组件时调用</a></li><li><a href="#t174.3 组件的属性值改变时调用">4.3 组件的属性值改变时调用</a></li><li><a href="#t184.4 销毁组件">4.4 销毁组件</a></li><li><a href="#t194.5 示例诠释组件全生命周期">4.5 示例诠释组件全生命周期</a></li><li><a href="#t204.6 回顾组件的渲染过程">4.6 回顾组件的渲染过程</a></li></ul></li><li><a href="#t215. 使用ref对操作DOM">5. 使用ref对操作DOM</a></li><li><a href="#t226. 事件event">6. 事件event</a></li><li><a href="#t237. 组件的组合">7. 组件的组合</a><ul><li><a href="#t247.1 受限组件 && 非受限组件">7.1 受限组件 && 非受限组件</a></li><li><a href="#t257.2 使用自定义的组件">7.2 使用自定义的组件</a></li><li><a href="#t267.3 组合 CHILDREN">7.3 组合 CHILDREN</a></li></ul></li><li><a href="#t278. form表单操作">8. form表单操作</a><ul><li><a href="#t288.1 React表单组件和 html 的不同点">8.1 React表单组件和 html 的不同点</a></li><li><a href="#t298.2 综合表达组件示例">8.2 综合表达组件示例</a></li></ul></li><li><a href="#t309. mixin共享">9. mixin共享</a></li><li><a href="#t31基础部分完结寄语">基础部分完结寄语</a></li></ul></li></ul>
     </div>
-    
+
     <div class="content markdown-body">
         <h1 style="font-size: 40px;text-align:center;color: #007cdc;" id="t0React&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x8BE6;&#x89E3;">React&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x8BE6;&#x89E3; <a href="#t0React&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x8BE6;&#x89E3;"> # </a></h1>
 
